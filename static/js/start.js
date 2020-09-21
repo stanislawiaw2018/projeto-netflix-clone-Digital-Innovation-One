@@ -23,5 +23,20 @@ $('.carousel').slick({
             }
         },
     ]
-  });
+});
+
+const btn_close = document.querySelector(".btn-close");
+const btn_menu = document.querySelector(".btn-menu");
+
+
+btn_menu.addEventListener("click", function(){
+  document.querySelector(".modal-menu").style.display="flex";
+  btn_menu.style.display="none";
+});
+
+btn_close.addEventListener("click", function(){
+  document.querySelector(".modal-menu").style.display="none";
+  btn_menu.style.display="flex";
+})
+
   

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- META DADOS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="Keybord" content="Educação, Digital Innovation One, Netflix, Front-end">
+    <meta name="description" content="Projeto desenvolvido no bootcamp HTML Web Developer com intuito de aprimorar os conhecimentos de Font-end.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Antonio Stanislaw">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon">
+
     <!-- CSS SLICK CAROUSEL -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
@@ -11,6 +19,7 @@
    
    <!-- CSS -->
     <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/responsive-index.css">
     <title>NetFlix</title>
 </head>
 <body>
@@ -19,11 +28,17 @@
             <a href="#">
                 <img class="logo" src="static/img/logo.png" alt="logo netflix" >
             </a>
+            <div class="nav-bar" hidden>
+                <button class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+           
             <nav >
                 <a href="#" >Inicio</a>
-                <a href="#" >Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#series" >Séries</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#documentarios">Documentários</a>
             </nav>
         </div>
     </header>
@@ -52,19 +67,63 @@
                 </div>
             </div>
         </div>
-        <div class="carousel">
-            <img src="static/img/mini1.jpg" alt="js" />
-            <img src="static/img/mini2.jpg" alt="java" />
-            <img src="static/img/mini3.jpg" alt="python"/>
-            <img src="static/img/mini4.jpg" alt="kotlin" />
-            <img src="static/img/mini5.jpg" alt="scala" />
-            <img src="static/img/mini6.jpg" alt="C#" />
-            <img src="static/img/mini7.jpg" alt="PHP" />
-            <img src="static/img/mini8.jpg" alt="dotnet" />
-            <img src="static/img/mini9.jpg" alt="dotnet" />
-            <img src="static/img/mini10.jpg" alt="dotnet" />
+        <div class="group-box">
+
+            <h1 id="series">SÉRIES</h1>
+            <div class="carousel">
+                <img src="static/img/mini1.jpg" alt="js" />
+                <img src="static/img/mini2.jpg" alt="java" />
+                <img src="static/img/mini3.jpg" alt="python"/>
+                <img src="static/img/mini4.jpg" alt="kotlin" />
+                <img src="static/img/mini5.jpg" alt="scala" />
+                <img src="static/img/mini6.jpg" alt="C#" />
+                <img src="static/img/mini7.jpg" alt="PHP" />
+                <img src="static/img/mini8.jpg" alt="dotnet" />
+                <img src="static/img/mini9.jpg" alt="dotnet" />
+                <img src="static/img/mini10.jpg" alt="dotnet" />
+            </div>
+            <h1 id="filmes">FILMES</h1>
+            <div class="carousel">
+                <img src="static/img/mini1.jpg" alt="js" />
+                <img src="static/img/mini2.jpg" alt="java" />
+                <img src="static/img/mini3.jpg" alt="python"/>
+                <img src="static/img/mini4.jpg" alt="kotlin" />
+                <img src="static/img/mini5.jpg" alt="scala" />
+                <img src="static/img/mini6.jpg" alt="C#" />
+                <img src="static/img/mini7.jpg" alt="PHP" />
+                <img src="static/img/mini8.jpg" alt="dotnet" />
+                <img src="static/img/mini9.jpg" alt="dotnet" />
+                <img src="static/img/mini10.jpg" alt="dotnet" />
+            </div>
+            <h1 id="documentarios">DOCUMENTÁRIOS</h1>
+            <div class="carousel">
+                <img src="static/img/mini1.jpg" alt="js" />
+                <img src="static/img/mini2.jpg" alt="java" />
+                <img src="static/img/mini3.jpg" alt="python"/>
+                <img src="static/img/mini4.jpg" alt="kotlin" />
+                <img src="static/img/mini5.jpg" alt="scala" />
+                <img src="static/img/mini6.jpg" alt="C#" />
+                <img src="static/img/mini7.jpg" alt="PHP" />
+                <img src="static/img/mini8.jpg" alt="dotnet" />
+                <img src="static/img/mini9.jpg" alt="dotnet" />
+                <img src="static/img/mini10.jpg" alt="dotnet" />
+            </div>
         </div>
+        
+
+       
     </main>
+     <!-- MODAL -->
+     <div class="modal-menu">
+        <h1 class="btn-close">X</h1>
+        <nav class="itens-bar">
+            
+            <a href="#" >Inicio</a>
+            <a href="#series" >Séries</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#documentarios">Documentários</a>
+        </nav>
+    </div>
 
     <!-- JS fontawesome -->
     <script src="https://kit.fontawesome.com/c0d589f286.js" crossorigin="anonymous"></script>
@@ -77,6 +136,7 @@
     
 
     <!-- JS -->
+    
     <script src="static/js/start.js"></script>
 
 

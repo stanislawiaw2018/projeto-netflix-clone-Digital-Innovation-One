@@ -25,9 +25,13 @@
 
 }
 /* base */
+html{
+    position: relative;
+}
 body{
     background: var(--preta);
     color: var(--branco);
+    
 }
 
 /* cabeçalho */
@@ -35,10 +39,14 @@ header .conteiner-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto 20px;
 }
 
 header .logo{
     width: 200px;
+    display: flex; 
+    align-items: center;
+    
 }
 
 header nav a{
@@ -54,6 +62,34 @@ header nav a:hover{
 header nav a.selected{
     color: var(--vermelho);
 }
+
+.modal-menu{
+    /* display: flex !important; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.itens-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    top: 20%;
+    
+}
+
+.itens-bar a{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--branco);
+
+}
+.itens-bar a:hover{
+    color: var(--vermelho);
+}
+
 
 /* CORPO - PRINCIPAL */
 .conteiner-main{
@@ -79,6 +115,8 @@ header nav a.selected{
     margin: 30px 0;
     max-width: 70%;
 }
+
+
 
 .botoes{
     display: flex;
@@ -113,8 +151,13 @@ header nav a.selected{
 
 /* CARROSEUL */
 
+.group-box h1{
+    margin: 20px 20px;
+    font-weight: bolder;
+}
+
 .carousel {
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
     outline: none;
     border: none;
@@ -135,5 +178,27 @@ header nav a.selected{
     opacity: 1;
     color: var(--branco);
 
+}
+
+
+.modal-menu{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 40%;
+    height: 100%;
+    display: none;
+    
+    
+}
+
+
+.btn-close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 
 }
+
